@@ -67,13 +67,13 @@ const fetchBook = function () {
 const displayBooks = function (title, author, cover) {
   const booksContainer = document.querySelector(".books-container");
   const bookElement = `
-            <div class="book bg-slate-100 p-4 rounded-xl shadow hover:shadow-lg transition-all duration-300 cursor-pointer">
+            <div class="book bg-slate-100 p-4 rounded-xl shadow hover:shadow-lg hover:bg-gradient-to-r from-red-300 to-violet-400 hover:scale-[1.1] active:shadow-lg active:bg-gradient-to-r active:from-red-300 active:to-violet-400 active:scale-[1.1] transition-all duration-300 cursor-pointer">
                 
                 <div class="flex flex-col items-center mt-4">
                     <img src="${cover}" alt="${title}" class="w-1/2 h-full object-cover rounded-lg shadow-md">
 
-                    <h1 class="text-violet-900 font-extrabold text-xl md:text-2xl text-center">${title}</h1>
-                    <p class="text-center">By <br><span class="text-lg text-red-400">${author}</span></p>
+                    <h1 class="text-violet-900 font-extrabold text-sm md:text-2xl text-center">${title}</h1>
+                    <p class="text-center">By <br><span class="text-sm md:text-lg text-red-400">${author}</span></p>
                 </div>
             </div>
             `;
